@@ -1,0 +1,22 @@
+Team ID : SWTID-2026-2295
+Team Name :Auto Ticket Classification using Flow Designer
+Team Size : 5
+==================================================
+PHASE 3: COMPLETE FIELD & SCHEMA SPECIFICATION
+==================================================
+
+Table: u_incident_workflow
+
+-----------------------------------------------------------------------------------------------------------------------------
+Field Label           | Field Name (Backend)  | Field Type          | Reference Table / Choice Options           | Mandatory / Read-Only
+-----------------------------------------------------------------------------------------------------------------------------
+Number                | number                | Auto Number         | System sequence generator (INC00...)       | Read-Only
+Caller                | u_caller              | Reference           | sys_user (User Profile master)             | Mandatory
+Category              | u_category            | Choice              | network, hardware, access, performance     | Optional at intake
+Subcategory           | u_subcategory         | Choice (Dependent)  | Wi-Fi, Projector, Forgot Password, Slow... | Dependent
+Short Description     | u_short_description   | String              | Summary of reported issue (Max 100 chars)  | Mandatory
+Description           | u_description         | String (Multi-line) | Detailed explanation of reported incident  | Optional
+State                 | state                 | Choice              | New, In progress, On hold, Resolved, Closed | Default: New
+Assigned Group        | u_assigned_group      | Reference           | sys_user_group (IT Support Teams)          | Optional
+Assigned to           | u_assigned_to         | Reference           | sys_user (IT Support Technician)           | Optional
+-----------------------------------------------------------------------------------------------------------------------------

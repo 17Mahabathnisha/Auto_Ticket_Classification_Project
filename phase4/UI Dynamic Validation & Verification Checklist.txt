@@ -1,0 +1,24 @@
+Team ID : SWTID-2026-2295
+Team Name :Auto Ticket Classification using Flow Designer
+Team Size : 5
+# Phase 4: UI Dynamic Validation & Verification Checklist
+
+## 🖼️ UI Dynamic Dropdown Validation
+
+| Category Selection | Filtered Subcategory Result | Visual Reference |
+| :--- | :--- | :--- |
+| **Network** | Shows only **Wi-Fi** | Figure 4.4 (`page_10_img_02.png`) |
+| **Hardware** | Shows only **Projector** | Figure 4.5 (`page_11_img_01.png`) |
+| **Access** | Shows only **Forgot Password** | Figure 4.6 (`page_11_img_02.png`) |
+| **Performance** | Shows only **Slow Computer** | Figure 4.7 (`page_11_img_03.png`) |
+
+---
+
+## ✅ Phase Verification Checklist
+
+- [x] Parent-child dependency established between `u_category` and `u_subcategory`[cite: 5].
+- [x] Dictionary records updated in `sys_choice` with accurate dependent keys[cite: 5].
+- [x] Tested in live UI: Selecting `Network` displays only `Wi-Fi`[cite: 5].
+- [x] Tested in live UI: Selecting `Hardware` displays only `Projector`[cite: 5].
+- [x] Tested in live UI: Selecting `Access` displays only `Forgot Password`[cite: 5].
+- [x] Tested in live UI: Selecting `Performance` displays only `Slow Computer`[cite: 5].

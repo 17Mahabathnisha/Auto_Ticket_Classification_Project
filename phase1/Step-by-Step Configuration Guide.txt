@@ -1,0 +1,33 @@
+Team ID : SWTID-2026-2295
+Team Name :Auto Ticket Classification using Flow Designer
+Team Size : 5
+# Phase 1: Step-by-Step Configuration Guide
+
+## ⚙️ Step-by-Step Configuration Guide
+
+### Step 1: Navigate to Local Update Sets
+1. Log in to the ServiceNow instance with `admin` privileges[cite: 8].
+2. In the Left Navigation Filter, search for **Update Sets**[cite: 8].
+3. Under the **System Update Sets** application menu, select **Local Update Sets**[cite: 8].
+
+---
+
+### Step 2: Create and Configure the New Update Set
+1. In the Local Update Sets list view, click the **New** button[cite: 8].
+2. Fill in the required configuration details[cite: 8]:
+
+| Configuration Field | Value | Purpose |
+| :--- | :--- | :--- |
+| **Name** | `Project Update Set` | Identifies the project configuration package[cite: 8]. |
+| **State** | `In progress` | Allows new customizations to be captured dynamically[cite: 8]. |
+| **Application** | `Global` | Ensures compatibility across the global application scope[cite: 8]. |
+| **Description** | Auto Ticket Classification & Routing System Customizations | Summary of the project package[cite: 8]. |
+
+3. Click **Submit** or right-click the form header and select **Save**[cite: 8].
+
+---
+
+### Step 3: Activate the Update Set
+1. Open the newly created `Project Update Set` record[cite: 8].
+2. Under the **Related Links** section at the bottom of the form, click **Make This My Current Set**[cite: 8].
+3. Verify that the Update Set picker in the top application header reflects `Project Update Set (Global)`[cite: 8].
