@@ -1,0 +1,50 @@
+==================================================
+PHASE 3: STEP-BY-STEP GUIDE & CHECKLIST
+==================================================
+
+--------------------------------------------------
+⚙️ STEP-BY-STEP CONFIGURATION GUIDE
+--------------------------------------------------
+
+### Step 1: Open Form Designer
+1. Navigate to the `u_incident_workflow` form list or open a new record.
+2. Click the form context menu icon (hamburger icon or right-click form header) -> Configure -> Form Design.
+
+### Step 2: Configure Layout Structure
+1. Organize the form into a clean 2-Column section:
+   - Left Column: Number, Caller, Category, Subcategory, Short Description, Description.
+   - Right Column: State, Assigned group, Assigned to.
+2. Drag and drop field types from the left palette onto the canvas.
+
+### Step 3: Configure Choice Options
+1. Category Field Choices:
+   Click the gear icon (Settings) on the Category choice field and add:
+   - Label: Network     | Value: network
+   - Label: Hardware    | Value: hardware
+   - Label: Access      | Value: access
+   - Label: Performance | Value: performance
+
+2. Subcategory Field Choices:
+   Click the gear icon on the Subcategory choice field and add:
+   - Label: Wi-Fi           | Value: wi-fi
+   - Label: Projector       | Value: projector
+   - Label: Forgot Password | Value: forgot password
+   - Label: Slow Computer   | Value: slow computer
+
+3. Click Save in the top right of Form Designer.
+
+--------------------------------------------------
+🖼️ VISUAL VERIFICATION & SCREENSHOTS (REFERENCES)
+--------------------------------------------------
+- Figure 3.1: Form Designer visual drag-and-drop layout builder with 2-column configuration.
+- Figure 3.2: Configuring Category choice items (Network, Hardware, Access, Performance).
+- Figure 3.3: Configuring Subcategory choice items (Wi-Fi, Projector, Forgot Password, Slow Computer).
+
+--------------------------------------------------
+✅ PHASE VERIFICATION CHECKLIST
+--------------------------------------------------
+[x] Responsive 2-column form layout saved.
+[x] References to sys_user and sys_user_group functioning properly.
+[x] Primary Category choices populated.
+[x] Target Subcategory choices populated.
+[x] Form schema verified in form preview.

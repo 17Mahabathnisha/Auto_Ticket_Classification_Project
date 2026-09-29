@@ -1,0 +1,35 @@
+# Phase 5: Step-by-Step Flow & Trigger Configuration Guide
+
+## ⚙️ Step-by-Step Configuration Guide
+
+### Step 1: Launch Flow Designer
+1. In the Left Navigation Filter, type `Flow Designer` or `Process Automation`[cite: 4].
+2. Under **Process Automation**, select **Flow Designer** (or open via **Workflow Studio**)[cite: 4].
+3. The Flow Designer visual workspace opens in a new tab[cite: 4].
+
+---
+
+### Step 2: Create a New Flow
+1. In Flow Designer, click the **+ Create** → **Flow** button[cite: 4].
+2. Configure flow properties[cite: 4]:
+
+| Property | Value | Description |
+| :--- | :--- | :--- |
+| **Flow Name** | `Auto Classify School IT Tickets` | Descriptive identifier for the automation workflow[cite: 4]. |
+| **Application** | `Global` | Associated application scope[cite: 4]. |
+| **Run As** | `System User` | Guarantees flow runs with elevated backend update permissions[cite: 4]. |
+| **Description** | Automated keyword evaluation, ticket categorization, and caller notification. | Purpose of flow[cite: 4]. |
+
+3. Click **Submit** to open the canvas[cite: 4].
+
+---
+
+### Step 3: Configure the Trigger Definition
+1. On the canvas, click **Add a Trigger**[cite: 4].
+2. Under **Record**, select **Created**[cite: 4].
+3. Configure the trigger parameters[cite: 4]:
+
+```text
+Trigger: Record Created
+Table: Incident WorkFlow [u_incident_workflow]
+Condition: Category is empty

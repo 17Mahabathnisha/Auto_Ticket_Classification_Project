@@ -1,0 +1,11 @@
+# Phase 2: Custom Table & Auto-Numbering Setup - Overview & Objectives
+
+## 📌 Phase Overview
+The objective of Phase 2 is to create the foundational relational data entity in ServiceNow to capture and store incident workflow records[cite: 7]. A custom table named `Incident WorkFlow` (`u_incident_workflow`) is created along with an automated database numbering sequence generator[cite: 7].
+
+---
+
+## 🎯 Key Objectives
+1. Create a custom table labeled `Incident WorkFlow` (`u_incident_workflow`)[cite: 7].
+2. Configure database controls to auto-generate unique ticket reference IDs prefixed with `INC`[cite: 7].
+3. Set the initial sequence counter starting at number `500` with a 5-digit padding[cite: 7].

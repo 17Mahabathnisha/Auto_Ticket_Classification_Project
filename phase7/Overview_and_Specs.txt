@@ -1,0 +1,41 @@
+======================================================================
+PHASE 7: AUTOMATED EMAIL NOTIFICATION ENGINE - OVERVIEW & SPECS
+======================================================================
+
+1. PHASE OVERVIEW
+----------------------------------------------------------------------
+The objective of Phase 7 is to integrate ServiceNow's outbound SMTP 
+notification engine (sys_email) directly into the workflow execution 
+path[cite: 1]. Once a ticket is auto-categorized, the system resolves 
+the caller's email address dynamically using data pill references and 
+dispatches an immediate confirmation email[cite: 1].
+
+----------------------------------------------------------------------
+2. KEY OBJECTIVES
+----------------------------------------------------------------------
+1. Configure the "Send Email" core action in Flow Designer[cite: 1].
+2. Dynamically dot-walk to the caller's email address via:
+   Trigger -> Incident WorkFlow Record -> Caller -> Email[cite: 1].
+3. Format standard transactional email content with ticket reference details[cite: 1].
+4. Save and Activate the complete flow engine[cite: 1].
+
+----------------------------------------------------------------------
+3. EMAIL NOTIFICATION SPECIFICATION
+----------------------------------------------------------------------
+- Action: Send Email
+  (Triggers ServiceNow outbound email generator)[cite: 1]
+
+- Target Record: Trigger -> Incident WorkFlow Record
+  (Associates the generated email with the incident record history)[cite: 1]
+
+- Table: Incident WorkFlow [u_incident_workflow]
+  (Target table context)[cite: 1]
+
+- To (Recipient): Trigger -> Incident WorkFlow Record -> Caller -> Email
+  (Dynamic dot-walking to sys_user.email)[cite: 1]
+
+- Subject: Your Request for the issue has been submitted.
+  (Clear, professional acknowledgment subject line)[cite: 1]
+
+- Body: Formatted transactional confirmation message
+  (Informs caller that the issue was logged and under review)[cite: 1]
